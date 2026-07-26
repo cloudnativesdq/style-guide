@@ -6,7 +6,7 @@
   "homepage": "https://cloudnativesdq.org",
   "repository": {
     "type": "git",
-    "url": "https://github.com/cloudnativesdq/design-system.git"
+    "url": "https://github.com/cloudnativesdq/style-guide.git"
   },
   "keywords": ["design-system", "cncf", "cloud-native", "santo-domingo", "css-tokens"],
   "main": "_ds_bundle.js",
