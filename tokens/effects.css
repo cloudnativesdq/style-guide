@@ -1,0 +1,19 @@
+:root{
+--ease-out-quart:cubic-bezier(0.25,1,0.5,1); /* @kind other */
+--ease-out-expo:cubic-bezier(0.16,1,0.3,1); /* @kind other */
+--duration-fast:200ms; /* @kind other */
+--duration-base:300ms; /* @kind other */
+--duration-slow:500ms; /* @kind other */
+
+--shadow-sm:0 2px 8px rgba(0,0,0,.20);
+--shadow-md:0 8px 24px rgba(0,0,0,.28);
+--shadow-lg:0 20px 48px rgba(0,0,0,.35);
+--shadow-2xl:0 24px 70px rgba(0,0,0,.45);
+
+--glow-sm:0 0 20px -5px hsl(199 89% 48% / .3);
+--glow-md:0 0 40px -10px hsl(199 89% 48% / .4);
+--glow-lg:0 0 60px -12px hsl(199 89% 48% / .5);
+
+--blur-card:blur(12px); /* @kind other */
+--blur-heavy:blur(24px); /* @kind other */
+}

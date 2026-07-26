@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Event Page" description="Single-meetup landing page — hero, details, speakers, RSVP" -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<div style="min-height:100vh;background:var(--bg-page);background-image:radial-gradient(at 0% 0%, hsla(199,89%,48%,.08) 0, transparent 50%),radial-gradient(at 100% 0%, hsla(199,89%,48%,.08) 0, transparent 50%);font-family:var(--font-body);color:var(--text-primary)">
+<section style="padding:80px 32px 56px;text-align:center;max-width:760px;margin:0 auto">
+<x-import component-from-global-scope="CloudNativeSantoDomingoDesignSystem_e36e6c.Badge" variant="accentSoft" hint-size="140px,28px">Meetup</x-import>
+<h1 style="font-family:var(--font-heading);font-weight:900;font-size:clamp(2.25rem,5vw,4rem);letter-spacing:-0.02em;line-height:0.95;margin:20px 0 16px">Kubernetes 101: Primeros Pasos</h1>
+<p style="font-size:18px;color:var(--text-muted);line-height:1.6;margin:0 0 32px">Un workshop introductorio para ingenieros que empiezan su viaje con Cloud Native. Trae tu laptop — todo se hace en vivo.</p>
+<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+<x-import component-from-global-scope="CloudNativeSantoDomingoDesignSystem_e36e6c.Button" size="lg" hint-size="200px,52px">Reservar mi lugar</x-import>
+<x-import component-from-global-scope="CloudNativeSantoDomingoDesignSystem_e36e6c.Button" variant="secondary" size="lg" hint-size="180px,52px">Ver ubicación</x-import>
+</div>
+</section>
+<section style="max-width:960px;margin:0 auto;padding:0 32px 64px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<x-import component-from-global-scope="CloudNativeSantoDomingoDesignSystem_e36e6c.StatPill" value="12 Sep" label="fecha" hint-size="100%,90px"></x-import>
+<x-import component-from-global-scope="CloudNativeSantoDomingoDesignSystem_e36e6c.StatPill" value="6:00 PM" label="hora" hint-size="100%,90px"></x-import>
+<x-import component-from-global-scope="CloudNativeSantoDomingoDesignSystem_e36e6c.StatPill" value="6 lugares" label="disponibles" hint-size="100%,90px"></x-import>
+</section>
+<section style="max-width:960px;margin:0 auto;padding:0 32px 96px">
+<h2 style="font-family:var(--font-heading);font-weight:700;font-size:28px;color:var(--accent);margin:0 0 24px;text-align:center">Presentadores</h2>
+<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:20px">
+<x-import component-from-global-scope="CloudNativeSantoDomingoDesignSystem_e36e6c.OrganizerCard" name="Ana Ramírez" role="Speaker" company="Acme Cloud" hint-size="180px,220px"></x-import>
+<x-import component-from-global-scope="CloudNativeSantoDomingoDesignSystem_e36e6c.OrganizerCard" name="Luis Peña" role="Co-host" company="Globant" hint-size="180px,220px"></x-import>
+</div>
+</section>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}"></script>
+</body>
+</html>

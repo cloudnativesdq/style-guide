@@ -1,0 +1,93 @@
+:root{
+/* Base — CNCF Community palette (from cloudnativesdq/website, Tailwind HSL vars converted to hex) */
+--navy-950:#090d16;
+--navy-900:#0a0e1a;
+--navy-800:#10151f;
+--navy-700:#151b28;
+--navy-600:#1b2231;
+--slate-400:#8992a6;
+--slate-200:#d9dfec;
+--cyan-500:#0ea8e6;
+--cyan-400:#3cc0f2;
+--cyan-300:#7ad8fa;
+--amber-500:#f2a93c;
+--red-500:#ef4a4a;
+
+/* Dominican heritage accents — color-only inspiration drawn from the Dominican flag
+   (ultramarine blue, vermillion red, white cross), per presidencia.gob.do symbol guidance.
+   Never used to reproduce the flag or coat of arms itself — accent tints only. */
+--heritage-ultramarine:#002d72;
+--heritage-vermillion:#ce1126;
+--heritage-white:#ffffff;
+
+/* Light-theme neutrals (paired with the dark ones above) */
+--fog-50:#f7f9fc;
+--fog-100:#eef1f7;
+--fog-200:#e2e7f0;
+--fog-700:#4a5468;
+--fog-900:#151b28;
+
+/* Semantic surface — dark theme is the default (site's native theme) */
+--bg-page:var(--navy-950);
+--bg-surface:var(--navy-800);
+--bg-card:var(--navy-700);
+--bg-card-hover:#1e2536;
+--bg-glass:rgba(255,255,255,.05);
+--bg-glass-hover:rgba(255,255,255,.10);
+--bg-glass-dark:rgba(0,0,0,.40);
+
+/* Semantic text */
+--text-primary:var(--slate-200);
+--text-muted:var(--slate-400);
+--text-on-accent:#ffffff;
+
+/* Semantic accent */
+--accent:var(--cyan-500);
+--accent-hover:#39bdf0;
+--accent-soft:rgba(14,168,230,.12);
+--glow:var(--cyan-500);
+
+/* Semantic borders */
+--border-subtle:rgba(255,255,255,.08);
+--border-default:rgba(255,255,255,.12);
+--border-accent:rgba(14,168,230,.35);
+
+/* Semantic status */
+--status-warning:var(--amber-500);
+--status-warning-fg:#1a1300;
+--status-danger:var(--red-500);
+--status-danger-fg:#ffffff;
+
+/* Heritage accent — sparing use: country badges, RD-specific callouts, footer flourish */
+--heritage-accent:var(--heritage-ultramarine);
+--heritage-accent-2:var(--heritage-vermillion);
+}
+
+/* Light variant — opt in with data-theme="light" on <html> or any container.
+   Same semantic token names resolve to a bright surface; the dark values in
+   :root above remain the default so nothing changes unless a page opts in. */
+[data-theme="light"]{
+--bg-page:var(--fog-50);
+--bg-surface:#ffffff;
+--bg-card:#ffffff;
+--bg-card-hover:var(--fog-100);
+--bg-glass:rgba(21,27,40,.04);
+--bg-glass-hover:rgba(21,27,40,.08);
+--bg-glass-dark:rgba(21,27,40,.06);
+
+--text-primary:var(--fog-900);
+--text-muted:var(--fog-700);
+--text-on-accent:#ffffff;
+
+--accent:#0284c7;
+--accent-hover:#0369a1;
+--accent-soft:rgba(2,132,199,.08);
+--glow:#0284c7;
+
+--border-subtle:rgba(21,27,40,.08);
+--border-default:rgba(21,27,40,.14);
+--border-accent:rgba(2,132,199,.3);
+
+--status-warning-fg:#3a2400;
+--status-danger-fg:#ffffff;
+}

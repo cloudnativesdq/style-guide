@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<!-- @template name="Slide Deck" description="CNCF-meetup-style deck — title, agenda, big quote, comparison, thank-you" -->
+<helmet><script src="./ds-base.js"></script></helmet>
+<x-import component-from-global-scope="deck-stage" from="./deck-stage.js" width="1920" height="1080" hint-size="100%,100%">
+<section data-label="Title" style="width:1920px;height:1080px;background:var(--bg-page);background-image:radial-gradient(at 20% 20%, hsla(199,89%,48%,.15) 0, transparent 50%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:var(--font-body);color:var(--text-primary)">
+<div style="font-family:var(--font-heading);font-size:20px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--accent);margin-bottom:32px">Cloud Native Santo Domingo</div>
+<h1 style="font-family:var(--font-heading);font-weight:900;font-size:96px;letter-spacing:-0.02em;line-height:0.95;margin:0 0 24px">Kubernetes en<br><span style="color:var(--accent)">Producción</span></h1>
+<p style="font-size:28px;color:var(--text-muted);margin:0">Lecciones aprendidas escalando en la nube</p>
+</section>
+<section data-label="Agenda" style="width:1920px;height:1080px;background:var(--bg-page);display:flex;flex-direction:column;justify-content:center;padding:0 180px;font-family:var(--font-body);color:var(--text-primary)">
+<h2 style="font-family:var(--font-heading);font-weight:700;font-size:56px;color:var(--accent);margin:0 0 56px">Agenda</h2>
+<div style="display:flex;flex-direction:column;gap:28px;font-size:32px">
+<div style="display:flex;gap:32px;align-items:baseline"><span style="font-family:var(--font-heading);font-weight:900;color:var(--accent);width:64px">01</span><span>¿Qué es Cloud Native?</span></div>
+<div style="display:flex;gap:32px;align-items:baseline"><span style="font-family:var(--font-heading);font-weight:900;color:var(--accent);width:64px">02</span><span>Kubernetes en la práctica</span></div>
+<div style="display:flex;gap:32px;align-items:baseline"><span style="font-family:var(--font-heading);font-weight:900;color:var(--accent);width:64px">03</span><span>Errores comunes y cómo evitarlos</span></div>
+<div style="display:flex;gap:32px;align-items:baseline"><span style="font-family:var(--font-heading);font-weight:900;color:var(--accent);width:64px">04</span><span>Preguntas y networking</span></div>
+</div>
+</section>
+<section data-label="Big Quote" style="width:1920px;height:1080px;background:var(--bg-page);background-image:radial-gradient(at 80% 80%, hsla(199,89%,48%,.12) 0, transparent 50%);display:flex;align-items:center;justify-content:center;padding:0 220px;font-family:var(--font-body);color:var(--text-primary)">
+<blockquote style="margin:0;text-align:center">
+<p style="font-family:var(--font-heading);font-weight:700;font-size:52px;line-height:1.25;letter-spacing:-0.01em;margin:0 0 40px">"La comunidad es lo que hace que Cloud Native funcione — nadie escala Kubernetes solo."</p>
+<div style="font-size:24px;color:var(--text-muted)">— Ana Ramírez, Organizer</div>
+</blockquote>
+</section>
+<section data-label="Comparison" style="width:1920px;height:1080px;background:var(--bg-page);display:flex;flex-direction:column;justify-content:center;padding:0 160px;font-family:var(--font-body);color:var(--text-primary)">
+<h2 style="font-family:var(--font-heading);font-weight:700;font-size:56px;color:var(--accent);margin:0 0 56px;text-align:center">Antes vs. Después</h2>
+<div style="display:flex;gap:40px">
+<div style="flex:1;padding:40px;border-radius:32px;background:var(--bg-glass);border:1px solid var(--border-subtle)">
+<div style="font-family:var(--font-heading);font-weight:700;font-size:26px;color:var(--text-muted);margin-bottom:24px;text-transform:uppercase;letter-spacing:0.1em">Antes</div>
+<div style="display:flex;flex-direction:column;gap:16px;font-size:24px">
+<div>Despliegues manuales</div><div>Sin observabilidad</div><div>Downtime frecuente</div>
+</div>
+</div>
+<div style="flex:1;padding:40px;border-radius:32px;background:var(--accent-soft);border:1px solid var(--border-accent)">
+<div style="font-family:var(--font-heading);font-weight:700;font-size:26px;color:var(--accent);margin-bottom:24px;text-transform:uppercase;letter-spacing:0.1em">Después</div>
+<div style="display:flex;flex-direction:column;gap:16px;font-size:24px">
+<div>CI/CD automatizado</div><div>Métricas + trazas en vivo</div><div>99.9% uptime</div>
+</div>
+</div>
+</div>
+</section>
+<section data-label="Thank You" style="width:1920px;height:1080px;background:var(--bg-page);background-image:radial-gradient(at 50% 50%, hsla(199,89%,48%,.15) 0, transparent 60%);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:var(--font-body);color:var(--text-primary)">
+<h1 style="font-family:var(--font-heading);font-weight:900;font-size:88px;letter-spacing:-0.02em;margin:0 0 24px">Gracias</h1>
+<p style="font-size:26px;color:var(--text-muted);margin:0 0 40px">¿Preguntas? Encuéntranos en cloudnativesdq.org</p>
+<div style="font-family:var(--font-heading);font-size:18px;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--accent)">Cloud Native Santo Domingo</div>
+</section>
+</x-import>
+
+</x-dc>
+</body>
+</html>

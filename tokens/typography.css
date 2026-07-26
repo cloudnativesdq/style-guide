@@ -1,0 +1,30 @@
+:root{
+--font-heading:'Space Grotesk',sans-serif;
+--font-body:'Inter',sans-serif;
+--font-mono:ui-monospace,'SF Mono',Menlo,monospace; /* @kind font */
+
+--fs-display:clamp(2.75rem,6vw,7rem); /* @kind other */
+--fs-h1:clamp(2rem,4vw,3.5rem); /* @kind other */
+--fs-h2:clamp(1.5rem,3vw,2.5rem); /* @kind other */
+--fs-h3:1.375rem;
+--fs-body-lg:1.125rem;
+--fs-body:1rem;
+--fs-small:0.875rem;
+--fs-tiny:0.75rem;
+--fs-micro:0.625rem;
+
+--lh-tight:0.9; /* @kind other */
+--lh-heading:1.1; /* @kind other */
+--lh-body:1.6; /* @kind other */
+
+--tracking-tight:-0.02em;
+--tracking-normal:0;
+--tracking-wide:0.15em;
+--tracking-widest:0.2em;
+
+--fw-regular:400; /* @kind other */
+--fw-medium:500; /* @kind other */
+--fw-semibold:600; /* @kind other */
+--fw-bold:700; /* @kind other */
+--fw-black:900; /* @kind other */
+}
