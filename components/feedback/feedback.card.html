@@ -1,0 +1,24 @@
+<!-- @dsCard group="Components" viewport="700x320" name="Feedback — Dialog, Toast, Tooltip" subtitle="Modal, notifications, hover hint" -->
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<div id="root" style="background:var(--bg-page);padding:20px;width:660px"></div>
+<script type="text/babel">
+const {Toast,Tooltip,Badge,Dialog,Button} = window.CloudNativeSantoDomingoDesignSystem_e36e6c;
+function Demo(){
+const [open,setOpen]=React.useState(false);
+return (
+<div style={{position:"relative",display:"flex",flexDirection:"column",gap:14,fontFamily:"var(--font-body)"}}>
+<Toast tone="success" title="¡Mensaje enviado con éxito!"/>
+<Toast tone="error" title="Hubo un error al enviar el mensaje." description="Inténtalo de nuevo."/>
+<div style={{display:"flex",gap:16,alignItems:"center"}}>
+<Tooltip label="Evento agotado"><Badge variant="destructive">Sold Out</Badge></Tooltip>
+<Button size="sm" variant="secondary" onClick={()=>setOpen(true)}>Abrir modal</Button>
+</div>
+<Dialog open={open} onClose={()=>setOpen(false)} title="Kubernetes 101: Primeros Pasos" description="12 de septiembre, 2026 · 6:00 PM · Santo Domingo" footer={<Button size="sm">Ver Evento</Button>}/>
+</div>
+);}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo/>);
+</script>

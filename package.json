@@ -1,0 +1,31 @@
+{
+  "name": "@cloudnativesdq/design-system",
+  "version": "0.1.0",
+  "description": "Design system for Cloud Native Santo Domingo (CNCF Community Group) — tokens, components, templates and UI kit.",
+  "license": "MIT",
+  "homepage": "https://cloudnativesdq.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudnativesdq/design-system.git"
+  },
+  "keywords": ["design-system", "cncf", "cloud-native", "santo-domingo", "css-tokens"],
+  "main": "_ds_bundle.js",
+  "style": "styles.css",
+  "files": [
+    "styles.css",
+    "tokens/",
+    "components/",
+    "templates/",
+    "ui_kits/",
+    "guidelines/",
+    "assets/",
+    "_ds_bundle.js",
+    "_ds_manifest.json",
+    "readme.md",
+    "ATTRIBUTION.md",
+    "SKILL.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "private": false
+}

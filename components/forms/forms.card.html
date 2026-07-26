@@ -1,0 +1,21 @@
+<!-- @dsCard group="Components" viewport="700x300" name="Forms — Input, Label, Textarea, Select, Switch" subtitle="Contact form + filter controls" -->
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+<script src="../../_ds_bundle.js"></script>
+<div id="root" style="background:var(--bg-page);padding:20px;width:660px"></div>
+<script type="text/babel">
+const {Input,Label,Textarea,Select,Switch,Button} = window.CloudNativeSantoDomingoDesignSystem_e36e6c;
+function Demo(){
+return (
+<div style={{display:"grid",gridTemplateColumns:"1fr 1fr",gap:16,fontFamily:"var(--font-body)"}}>
+<div style={{display:"flex",flexDirection:"column",gap:6}}><Label htmlFor="n">Nombre</Label><Input id="n" placeholder="Tu nombre"/></div>
+<div style={{display:"flex",flexDirection:"column",gap:6}}><Label htmlFor="e">Correo Electrónico</Label><Input id="e" type="email" placeholder="tu@correo.com"/></div>
+<div style={{display:"flex",flexDirection:"column",gap:6,gridColumn:"1 / -1"}}><Label htmlFor="m">Mensaje</Label><Textarea id="m" rows={3} placeholder="Cuéntanos en qué podemos colaborar"/></div>
+<div style={{display:"flex",flexDirection:"column",gap:6}}><Label>Tipo de evento</Label><Select options={["Todos","Meetup","Conference","Online"]}/></div>
+<div style={{display:"flex",alignItems:"flex-end",justifyContent:"space-between",gap:12}}><Switch label="Solo presenciales"/><Button size="sm">Enviar</Button></div>
+</div>
+);}
+ReactDOM.createRoot(document.getElementById("root")).render(<Demo/>);
+</script>
