@@ -27,7 +27,7 @@ Brand marks (Instagram, LinkedIn, YouTube, GitHub) remain trademarks of their re
 |---|---|---|
 | `hero-banner.jpg` | [cloudnativesdq/website](https://github.com/cloudnativesdq/website) (`src/assets/`) | Provenance not verified upstream — confirm you hold rights before reusing outside the community's own channels. |
 | `og-image.jpg` | same repo (`public/`) | same caveat |
-| `favicon.svg` | same repo (`public/`) | Placeholder mark from the source repo, not the community's logo |
+| `mark.svg`, `mark-mono.svg` | same repo (`public/brand/`) | The Cloud Native Santo Domingo community mark and its one-color variant. Authored for the community; contains no CNCF, Kubernetes or Dominican national symbols. |
 
 ## Trademarks
 
