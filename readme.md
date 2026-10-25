@@ -23,7 +23,7 @@ If you have access to these repos, read them directly for anything this system d
 - `components/navigation/` — NavLink, SocialIconButton.
 - `ui_kits/website/` — interactive homepage recreation (nav, hero, events, team, footer) with a working ES/EN language toggle.
 - `guidelines/` — foundation specimen cards (colors, type, spacing, brand surfaces/motion) shown in the Design System tab.
-- `assets/` — hero image, OG image, and copied icon SVGs (Lucide + Simple Icons). No logo file — see caveats.
+- `assets/` — the community mark (`mark.svg`, one-color `mark-mono.svg`), hero image, OG image, and copied icon SVGs (Lucide + Simple Icons).
 - `templates/` — event page, conference page, and slide deck templates.
 - Light/dark theming — `[data-theme="light"]` opt-in on any container; see Visual Foundations.
 
@@ -108,7 +108,7 @@ The codebase ships the full `shadcn/ui` primitive library (49 components in `src
 - `guidelines/*.card.html` — foundation specimen cards (Colors, Type, Spacing, Brand)
 - `ui_kits/website/{index.html,HomePage.jsx,Pages.jsx}` — interactive recreation: homepage, events (filter + modal), team, gallery (carousel), contact (form + toast)
 - `assets/fonts/` — self-hosted Space Grotesk + Inter variable TTFs (OFL licensed)
-- `assets/{hero-banner.jpg,og-image.jpg,favicon.svg,icons/*.svg}` — real brand + icon assets (no logo — pending new mark)
+- `assets/{mark.svg,mark-mono.svg,hero-banner.jpg,og-image.jpg,icons/*.svg}` — the community mark and its one-color variant, plus brand and icon assets
 - `templates/event-page/`, `templates/conference-page/`, `templates/slide-deck/` — reusable content templates
 - `SKILL.md` — Claude Code-compatible skill wrapper for this system
 - `github.md` — source-repo sync record
@@ -162,10 +162,10 @@ MIT for everything authored here (`LICENSE`). Bundled fonts, icons and images ar
 
 ## Caveats — please help me iterate
 
-1. **Logo** — still pending your new mark; the "Cloud Native SDQ" wordmark stands in everywhere a logo would go (thumbnail, brand card, navbar, social-post template). Drop the file in `assets/` (SVG + a monochrome variant ideally) and I'll wire it in.
+1. **Mark** — the approved wave mark is `assets/mark.svg` (64x64 viewBox): cyan `#0ea8e6` curl ending in a node, light cyan `#7ad8fa` inner swell, vermillion `#ce1126` dot near the crest. `assets/mark-mono.svg` is the one-color variant (`currentColor`, swell at 0.6 stroke opacity) for single-ink surfaces. The lockup is the mark followed by "Cloud Native Santo Domingo" in Space Grotesk 700; "Cloud Native SDQ" / "CN SDQ" only where a short name is required. Rules: never combine it with CNCF or Kubernetes marks, the Dominican flag's cross or quarters, the coat of arms or the island outline, and never let heritage ultramarine `#002d72` touch vermillion `#ce1126` directly. The social-post template and UI kit still show the old text wordmark.
 2. **Dominican heritage accent** — now used as a thin ultramarine/vermillion end-cap on the social-post bottom rule, plus the color tokens. I deliberately stopped short of anything flag- or shield-shaped, since those are protected symbols with their own usage rules. Tell me how much further you want to go (textile/larimar-inspired pattern, map silhouette, taino-motif geometry) and I'll explore options rather than guess.
 3. **Instagram/LinkedIn still not directly readable** — the captions you pasted were enough to build the caption anatomy above; more posts (especially your best-performing graphics) would let me tighten the social-post template's visual formula.
 4. **No Figma / design file** — everything is reverse-engineered from the live codebase; a Figma link would let me verify exact spacing/type and catch anything code-only exploration missed.
 5. **Event calendar view not rebuilt** — `EventCalendar.tsx` (month grid + per-day event modal) is the one substantial site surface still missing from the UI kit. Say the word and I'll add it.
 
-Bold ask: **drop in the new logo when it's ready and tell me whether to build the calendar view next** — those are the two biggest remaining gaps.
+Bold ask: **tell me whether to build the calendar view next** — it is the biggest remaining gap.

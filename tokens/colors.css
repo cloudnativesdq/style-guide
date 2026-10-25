@@ -39,7 +39,7 @@
 /* Semantic text */
 --text-primary:var(--slate-200);
 --text-muted:var(--slate-400);
---text-on-accent:#ffffff;
+--text-on-accent:#04202f; /* 6.20:1 on cyan-500; white was 2.71:1 */
 
 /* Semantic accent */
 --accent:var(--cyan-500);
@@ -79,14 +79,14 @@
 --text-muted:var(--fog-700);
 --text-on-accent:#ffffff;
 
---accent:#0284c7;
---accent-hover:#0369a1;
---accent-soft:rgba(2,132,199,.08);
---glow:#0284c7;
+--accent:#0369a1; /* white text 5.93:1 (WCAG AA) */
+--accent-hover:#075985;
+--accent-soft:rgba(3,105,161,.08);
+--glow:#0369a1;
 
 --border-subtle:rgba(21,27,40,.08);
 --border-default:rgba(21,27,40,.14);
---border-accent:rgba(2,132,199,.3);
+--border-accent:rgba(3,105,161,.3);
 
 --status-warning-fg:#3a2400;
 --status-danger-fg:#ffffff;

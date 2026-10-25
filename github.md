@@ -5,7 +5,8 @@ date: 2026-07-26T14:12:23Z
 ### Updated in this project
 - Imported tokens (colors, type, spacing, effects) from `globals.css` + `tailwind.config.ts`
 - Built Button/Badge/Card/EventCard/OrganizerCard/StatPill/NavLink/SocialIconButton from `src/components/ui/*` and `src/components/*`
-- Copied hero image, OG image, favicon from `public/` and `src/assets/` (logo since removed — new mark pending)
+- Copied hero image and OG image from `public/` and `src/assets/`
+- Added the community mark (`assets/mark.svg`, `assets/mark-mono.svg`) from `public/brand/`; the old placeholder favicon was removed
 - Built interactive homepage UI kit (`ui_kits/website/`) with ES/EN toggle, matching `HomeView.tsx`/`HeroSection.tsx`/`Navbar.tsx`
 - Added event-page, conference-page, and slide-deck templates
 
